@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image</title>
+    <title>Scroll Viewer</title>
     <style>
-        /* Remove all default margin and padding from the page */
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-
-        /* Style the image */
+        
+        body {
+            background: #000;
+            overflow-x: hidden;
+        }
+        
         img {
-            /* Remove the small space that browsers add below images */
-            display: block; 
-            
-            /* Make the image span the full width of the screen */
-            width: 100%; 
-            
-            /* Maintain the image's aspect ratio */
-            height: auto; 
+            display: block;
+            width: 100%;
+            height: auto;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
         }
     </style>
 </head>
 <body>
-
-    <img src="image.jpg" alt="Full width slide image">
-
+    <img src="your-scroll-image.jpg" alt="Long Scroll">
 </body>
 </html>
